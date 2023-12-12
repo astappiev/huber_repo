@@ -1,0 +1,18 @@
+---
+- name: tailspin
+  description: A log file highlighter
+  source:
+    Github:
+      owner: bensadeh
+      repo: tailspin
+  targets:
+    - LinuxAmd64:
+        artifact_templates:
+          - "tspin-x86_64-unknown-linux-musl.tar.gz"
+    - MacOS:
+        artifact_templates:
+          - "tspin-x86_64-apple-darwin.tar.gz"
+    - Windows:
+        artifact_templates:
+          - "tspin-x86_64-pc-windows-msvc.zip"
+  detail: ~
